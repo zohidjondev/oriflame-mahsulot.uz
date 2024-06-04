@@ -1,0 +1,1 @@
+Add the option to report about the error in id or product link to telegram dm with some instruciotn in website
