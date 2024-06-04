@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --box-shadow: rgba(0, 0, 0, 0.15) 0 0 20px ;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+header {
+    background: #A0DABF;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-container {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#search-input {
+    padding: 0.5rem;
+    border-radius: 4rem;
+    border: none;
+    width: 60%;
+    margin-right: 0.5rem;
+    border: 0.15rem solid #A0DABF;
+    outline: none;
+    box-shadow: var(--box-shadow);
+}
+
+#search-button {
+    padding: 0.5rem 1rem;
+    border-radius: 4rem;
+    border: none;
+    background-color: #A0DABF;
+    color: white;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    font-weight: 600;
+}
+
+#result-container {
+    margin: 2rem auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 4rem;
+    max-width: 60%;
+    color: white;
+    background: #A0DABF;
+    box-shadow: var(--box-shadow);
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+#result-container a {
+    text-decoration: none;
+    color: #A0DABF;
+    background: white;
+    padding: 0.3rem;
+    border-radius: 105px;
+    font-weight: 700;
+    box-shadow: rgba(102, 184, 145, 0.8)  0 4px 0 ;
+}
+
+footer {
+    background: #A0DABF;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    font-weight: 600;
+}
+
+main {
+    color: #A0DABF;
+    padding: 0 1rem 0 ;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search-input {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    #search-button {
+        width: 80%;
+        margin-top: 0.5rem;
+    }
+
+    #result-container {
+        width: 80%;
+        margin: 2rem auto;
+    }
+}
