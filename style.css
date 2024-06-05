@@ -10,18 +10,22 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
+    /* background: linear-gradient(45deg, red 0 10%, blue 50% 100%); */
 }
 
 header {
     background: #A0DABF;
     padding: 1rem;
     text-align: center;
-    box-shadow: var(--box-shadow);
+    height: 18rem;
+    background: linear-gradient(#A0DABF, white);
 }
 
-header h1 {
+header h1 a{
     margin: 0;
     font-size: 2rem;
+    text-decoration: none;
+    color: white;
 }
 
 nav ul {
@@ -68,6 +72,7 @@ nav ul li a {
     cursor: pointer;
     box-shadow: var(--box-shadow);
     font-weight: 600;
+    max-width: 25rem;
 }
 
 #result-container {
@@ -75,13 +80,14 @@ nav ul li a {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
-    border-radius: 4rem;
+    border-radius: 2.5rem;
     max-width: 60%;
     color: white;
     background: #A0DABF;
     box-shadow: var(--box-shadow);
     font-weight: 600;
     line-height: 1.5rem;
+    max-width: 25rem;
 }
 
 #result-container a {
@@ -95,19 +101,32 @@ nav ul li a {
 }
 
 footer {
-    background: #A0DABF;
+    /* background: #A0DABF; */
     text-align: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     font-weight: 600;
+    height: 4rem;
+    background: linear-gradient(white, #A0DABF);
+}
+
+footer p{
+    /* align-items: center; */
+    justify-content: center;
+    padding-top: 1rem;
 }
 
 main {
     color: #A0DABF;
     padding: 0 1rem 0 ;
+}
+
+/* Add this rule to hide the result container initially */
+.hidden {
+    display: none;
 }
 
 @media (max-width: 600px) {
@@ -127,13 +146,13 @@ main {
     }
 
     #search-input {
-        width: 80%;
+        width: 85%;
         margin-right: 0;
         margin-bottom: 0.5rem;
     }
 
     #search-button {
-        width: 80%;
+        width: 89%;
         margin-top: 0.5rem;
     }
 

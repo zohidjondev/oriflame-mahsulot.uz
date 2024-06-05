@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 const isValidInput = /^\d{5}$/.test(searchInput);
 
                 if (!isValidInput) {
-                    resultContainer.innerHTML = `Iltimos, faqat 5 raqamli ID kiriting.`;
+                    resultContainer.innerHTML = `Iltimos, faqat 5 raqamli IDni kiriting.`;
+                    resultContainer.classList.remove('hidden');
                     return;
                 }
 
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else {
                     resultContainer.innerHTML = `Ushbu mahsulotning tarjimasi telegram kanalda yo'q ekan.`;
                 }
+                resultContainer.classList.remove('hidden');
             });
         })
         .catch(error => {
