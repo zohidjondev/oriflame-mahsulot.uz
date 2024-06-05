@@ -20,12 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 const product = products.find(p => p.id === searchInput);
 
                 if (product) {
-                    resultContainer.innerHTML = `Mahsulotning tarjimasi telegram kanalda topildi. Ushbu <a href="${product.telegram_link}" target="_blank">havola</a> orqali unga oting.`;
+                    resultContainer.innerHTML = `<strong><u>${product.product_name}</u></strong> mahsulotning tarjimasi telegram kanalda topildi. Ushbu <a href="${product.telegram_link}" target="_blank">havola</a> orqali unga oting.`;
                 } else {
                     resultContainer.innerHTML = `Ushbu mahsulotning tarjimasi telegram kanalda yo'q ekan.`;
                 }
                 resultContainer.classList.remove('hidden');
             });
+
+            // Hide the result container initially
+            document.getElementById("result-container").classList.add('hidden');
         })
         .catch(error => {
             console.error('Error loading data:', error);

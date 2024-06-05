@@ -56,7 +56,7 @@ nav ul li a {
     padding: 0.5rem;
     border-radius: 4rem;
     border: none;
-    width: 60%;
+    width: 50%;
     margin-right: 0.5rem;
     border: 0.15rem solid #A0DABF;
     outline: none;
@@ -80,7 +80,7 @@ nav ul li a {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
-    border-radius: 2.5rem;
+    border-radius: 2rem;
     max-width: 60%;
     color: white;
     background: #A0DABF;
@@ -90,7 +90,7 @@ nav ul li a {
     max-width: 25rem;
 }
 
-#result-container a {
+#result-container a{
     text-decoration: none;
     color: #A0DABF;
     background: white;
@@ -100,7 +100,12 @@ nav ul li a {
     box-shadow: rgba(102, 184, 145, 0.8)  0 4px 0 ;
 }
 
+#result-container strong {
+    font-size: 1.1rem;
+    /* border:1px solid white; */
+}
 footer {
+    box-sizing: border-box;
     /* background: #A0DABF; */
     text-align: center;
     /* padding: 1rem; */
@@ -109,14 +114,14 @@ footer {
     width: 100%;
     /* box-shadow: var(--box-shadow); */
     font-weight: 600;
-    height: 4rem;
+    height: 8rem;
     background: linear-gradient(white, #A0DABF);
 }
 
 footer p{
     /* align-items: center; */
     justify-content: center;
-    padding-top: 1rem;
+    padding-top: 4.5rem;
 }
 
 main {
@@ -124,11 +129,10 @@ main {
     padding: 0 1rem 0 ;
 }
 
-/* Add this rule to hide the result container initially */
 .hidden {
     display: none;
 }
-
+/* Add this rule to hide the result container initially */
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.4rem;
