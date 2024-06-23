@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --box-shadow: rgba(0, 0, 0, 0.15) 0 0 20px ;
+
+    --main-color: #A0DABF;
+    --white-color: #fff;
 }
 * {
     font-family: 'Montserrat', sans-serif;
@@ -14,18 +17,18 @@ body {
 }
 
 header {
-    background: #A0DABF;
+    background: var(--main-color);
     padding: 1rem;
     text-align: center;
     height: 16rem;
-    background: linear-gradient(#A0DABF, white);
+    background: linear-gradient(var(--main-color), var(--white-color));
 }
 
 header h1 a{
     margin: 0;
     font-size: 2rem;
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
 }
 
 nav ul {
@@ -36,13 +39,13 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 1rem;
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     padding: 0.4rem;
     border-radius: 5rem;
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--white-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -58,7 +61,7 @@ nav ul li a {
     border: none;
     width: 50%;
     margin-right: 0.5rem;
-    border: 0.15rem solid #A0DABF;
+    border: 0.15rem solid var(--main-color);
     outline: none;
     box-shadow: var(--box-shadow);
 }
@@ -67,8 +70,8 @@ nav ul li a {
     padding: 0.5rem 1rem;
     border-radius: 4rem;
     border: none;
-    background-color: #A0DABF;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--white-color);
     cursor: pointer;
     box-shadow: var(--box-shadow);
     font-weight: 600;
@@ -82,8 +85,8 @@ nav ul li a {
     padding: 1rem;
     border-radius: 2rem;
     max-width: 60%;
-    color: white;
-    background: #A0DABF;
+    color: var(--white-color);
+    background: var(--main-color);
     box-shadow: var(--box-shadow);
     font-weight: 600;
     line-height: 1.5rem;
@@ -92,8 +95,8 @@ nav ul li a {
 
 #result-container a{
     text-decoration: none;
-    color: #A0DABF;
-    background: white;
+    color: var(--main-color);
+    background: var(--white-color);
     padding: 0.3rem;
     border-radius: 105px;
     font-weight: 700;
@@ -102,20 +105,16 @@ nav ul li a {
 
 #result-container strong {
     font-size: 1.1rem;
-    /* border:1px solid white; */
 }
 footer {
     box-sizing: border-box;
-    /* background: #A0DABF; */
     text-align: center;
-    /* padding: 1rem; */
     position: fixed;
     bottom: 0;
     width: 100%;
-    /* box-shadow: var(--box-shadow); */
     font-weight: 600;
     height: 8rem;
-    background: linear-gradient(white, #A0DABF);
+    background: linear-gradient(var(--white-color), var(--main-color));
 }
 
 footer p{
@@ -125,13 +124,18 @@ footer p{
 }
 
 main {
-    color: #A0DABF;
+    color: var(--main-color);
     padding: 0 1rem 0 ;
 }
 
 .hidden {
     display: none;
 }
+
+.quotes p {
+    color: var();
+}
+
 /* Add this rule to hide the result container initially */
 @media (max-width: 600px) {
     header h1 {
